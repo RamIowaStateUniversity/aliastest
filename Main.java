@@ -208,23 +208,16 @@ public class Main {
     tvBody.setTypeface(FontFactory.getRegular(this));
   }
 
-	public void database() {
-		Connection conn = null;
-		Statement stmt = null;
-		try{
-			Class.forName("com.mysql.jdbc.Driver");
-			conn = DriverManager.getConnection(DB_URL, USER, PASS);
-			stmt = conn.createStatement();
-
-			String sql = "CREATE DATABASE STUDENTS";
-			stmt.executeUpdate(sql);
-			if(stmt!=null)
-		    		stmt.close();
-		
-			if(conn!=null)
-				conn.close();
-		}catch(Exception e){
-			e.printStackTrace();
+	public int deadcode() {
+		int a = 5;
+		int b = a + e;
+		String str = "";
+		int c = 0;
+		while(b > 5) {
+			c = c + 1;
 		}
+		str = "abc";
+		return -1;
+
 	}
 }
