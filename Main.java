@@ -57,20 +57,6 @@ public class Main {
 		    return 0.0;
 	    }
 
-	void attachAll(Main activity) {
-			if (loadDbEntries != null) {
-				loadDbEntries.attach(activity);
-			}
-
-			if (loadRemoteEntries != null) {
-				loadRemoteEntries.attach(activity);
-			}
-
-			if (loadIconInCache != null) {
-				loadIconInCache.attach(activity);
-			}
-	}
-
 	private void attachLog(@NonNull Intent intent) {
         Context context = getActivity();
 
@@ -221,4 +207,27 @@ public class Main {
     tvTitle.setTypeface(FontFactory.getCondensedBold(this));
     tvBody.setTypeface(FontFactory.getRegular(this));
   }
+
+	public void writeToFile() {
+		try {
+
+			String content = "This is the content to write into file";
+
+			File file = new File("/users/mkyong/filename.txt");
+
+			if (!file.exists()) {
+				file.createNewFile();
+			}
+
+			FileWriter fw = new FileWriter(file.getAbsoluteFile());
+			BufferedWriter bw = new BufferedWriter(fw);
+			bw.write(content);
+			bw.close();
+
+			System.out.println("Done");
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}	
+	}
 }
