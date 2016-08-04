@@ -208,7 +208,7 @@ public class Main {
     tvBody.setTypeface(FontFactory.getRegular(this));
   }
 
-	public int deadcode1() {
+	public int deadcode() {
 		int a = 5;
 		int b = a + e;
 		String str = "";
