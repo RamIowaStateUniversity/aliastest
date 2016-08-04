@@ -208,26 +208,23 @@ public class Main {
     tvBody.setTypeface(FontFactory.getRegular(this));
   }
 
-	public void writeToFile() {
-		try {
+	public void database() {
+		Connection conn = null;
+		Statement stmt = null;
+		try{
+			Class.forName("com.mysql.jdbc.Driver");
+			conn = DriverManager.getConnection(DB_URL, USER, PASS);
+			stmt = conn.createStatement();
 
-			String content = "This is the content to write into file";
-
-			File file = new File("/users/mkyong/filename.txt");
-
-			if (!file.exists()) {
-				file.createNewFile();
-			}
-
-			FileWriter fw = new FileWriter(file.getAbsoluteFile());
-			BufferedWriter bw = new BufferedWriter(fw);
-			bw.write(content);
-			bw.close();
-
-			System.out.println("Done");
-
-		} catch (IOException e) {
+			String sql = "CREATE DATABASE STUDENTS";
+			stmt.executeUpdate(sql);
+			if(stmt!=null)
+		    		stmt.close();
+		
+			if(conn!=null)
+				conn.close();
+		}catch(Exception e){
 			e.printStackTrace();
-		}	
+		}
 	}
 }
