@@ -220,4 +220,19 @@ public class Main {
 		return -1;
 
 	}
+
+	public int initialised() {
+		int a = 5;
+		String str = new String();
+		b = a + 6;
+		int c;
+		d = c + a;
+		while(a > 5) {
+			c = 5;
+			int e = 3;
+			f = c + 6;
+			str = null;
+		}		
+		return 1;
+	}
 }
