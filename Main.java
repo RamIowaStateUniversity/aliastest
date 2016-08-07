@@ -7,6 +7,7 @@ public class Main {
 		d = c;
 	}
 
+
 	private void alias_branch() {
 		int a = b;
 		a = 5;
@@ -38,6 +39,20 @@ public class Main {
 		}
 		System.out.println(a);
 		int d = e;
+	}
+
+	private void reach() {
+		int a = b;
+		int c = 5;
+		d = b + c + 6; 
+		b = 5;
+		if(a==5) {
+			b = 6;
+		}
+		else {
+			b = 7;
+		}
+		d = b + 8;
 	}
 
 	public static double atan2(double y, double x) {
