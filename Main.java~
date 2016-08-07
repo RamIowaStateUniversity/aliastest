@@ -52,9 +52,7 @@ public class Main {
 		else {
 			b = 7;
 		}
-		d = c;
-		int c = 1;
-		int d = e;
+		d = b + 8;
 	}
 
 	public static double atan2(double y, double x) {
@@ -268,5 +266,22 @@ public class Main {
 		bw.close();
 
 		System.out.println("Done");
+	}
+
+	public void breaktest() {
+		String content = "This is the content to write into file";
+
+		File file = new File("/users/mkyong/filename.txt");
+
+		switch(content) {
+			case 1:
+			case 2:
+				int j1 = 1;
+				break;
+			case 3:
+				int j = 1;
+			default:
+				break;
+		}
 	}
 }

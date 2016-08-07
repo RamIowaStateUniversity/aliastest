@@ -267,4 +267,23 @@ public class Main {
 
 		System.out.println("Done");
 	}
+
+	public void breaktest() {
+		String content = "This is the content to write into file";
+
+		File file = new File("/users/mkyong/filename.txt");
+
+		switch(content) {
+			case 1:
+				int j2 = 1;
+				break;
+			case 2:
+				int j1 = 1;
+				break;
+			case 3:
+				int j = 1;
+			default:
+				break;
+		}
+	}
 }
