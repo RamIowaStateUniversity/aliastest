@@ -286,4 +286,14 @@ public class Main {
 				break;
 		}
 	}
+
+	public void mustnotalias() {
+
+		Main p = new Main();
+		Main q = new Main();
+		String content = "This is the content to write into file";
+
+		File file = new File("/users/mkyong/filename.txt");
+
+	}
 }
