@@ -187,13 +187,9 @@ public class Main {
             int startX = (outWidth - dataWidth) / 2;
             int startY = (outHeight - dataHeight) / 2;
 
-            for (int y = 0;
-                 y < outHeight;
-                 y++) {
+            for (int y = 0;       y < outHeight;           y++) {
                 final int offset = y * outWidth;
-                for (int x = 0;
-                     x < outWidth;
-                     x++) {
+                for (int x = 0;    x < outWidth; x++) {
                     if (x >= startX && x < dataWidth + startX && y >= startY && y < dataHeight +
                             startY) {
                         pixels[offset + x] = result.get(x - startX + drawBeginLocation[0],
@@ -243,6 +239,20 @@ public class Main {
 		int c;
 		d = c + a;
 		while(a > 5) {
+			a = a+6;
+			c = 5;
+			int e = 3;
+			f = c + 6;
+			str = null;
+		}
+		while(a+b > 5) {
+			a = a+6;
+			c = 5;
+			int e = 3;
+			f = c + 6;
+			str = null;
+		}
+		while(a+b > 5) {
 			c = 5;
 			int e = 3;
 			f = c + 6;
