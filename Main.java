@@ -238,6 +238,15 @@ public class Main {
 		b = a + 6;
 		int c;
 		d = c + a;
+		String[] str = new String[10];
+		if(a==5) {
+		}
+		System.out.println(a);
+		if(a==5) {
+		}
+		else {
+		}
+		System.out.println(a);
 		while(a > 5) {
 			a = a+6;
 			c = 5;

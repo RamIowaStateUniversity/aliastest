@@ -238,6 +238,10 @@ public class Main {
 		b = a + 6;
 		int c;
 		d = c + a;
+		String[] str = new String[10];
+		if(a==5) {
+		}
+		System.out.println(a);
 		while(a > 5) {
 			a = a+6;
 			c = 5;
@@ -247,6 +251,12 @@ public class Main {
 		}
 		while(a+b > 5) {
 			a = a+6;
+			c = 5;
+			int e = 3;
+			f = c + 6;
+			str = null;
+		}
+		while(a+b > 5) {
 			c = 5;
 			int e = 3;
 			f = c + 6;
