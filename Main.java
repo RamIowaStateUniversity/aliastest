@@ -315,4 +315,22 @@ public class Main {
 		File file = new File("/users/mkyong/filename.txt");
 
 	}
+
+	public void loopinvariant() {
+		Main p;
+		Main q = new Main();
+		String content = "This is the content to write into file";
+		p = q;
+		File file = new File("/users/mkyong/filename.txt");
+		for (int i = 0; i < n; i++) {
+		    x = y + z;
+		    a[i] = 6 * i + x * x;
+		}
+		y = 5;
+		z = 7;
+		for (int i = 0; i < n; i++) {
+		    x = y + z;
+		    a[i] = 6 * i + x * x;
+		}
+	}
 }
